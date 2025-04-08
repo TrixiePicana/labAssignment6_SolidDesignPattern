@@ -1,13 +1,19 @@
 //Library System for managing resources; Client code
 public class LibrarySystem 
 {
-  //Create Resources
-  LibraryResource book = new Book("Dekada '70");
-  LibraryResource journal = new Journal("Journal of Philippine Development");
-  LibraryResource thesis = new Thesis("The Role of Social Media in Political Engagement Among Filipino Youth");
+  publlic static void main(String[] args ) 
+  {
+    //Create Resources
+    LibraryResource book = new Book("Dekada '70");
+    LibraryResource journal = new Journal("Journal of Philippine Development");
+    LibraryResource thesis = new Thesis("The Role of Social Media in Political Engagement Among Filipino Youth");
 
-  Student student = new Student("Juan Bautista");
+    //Create student
+    Student student = new Student("Juan Bautista");
 
-  //Borrow resource(s)
-  student.borrowResource(book);
+    //Borrow resource(s); Implement LSP
+    student.borrowResource(book);
+    student.borrowResource(journal);
+    student.borrowResource(thesis);
+  }
 }
