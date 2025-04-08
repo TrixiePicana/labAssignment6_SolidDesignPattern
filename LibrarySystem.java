@@ -1,7 +1,7 @@
 //Library System for managing resources; Client code
 public class LibrarySystem 
 {
-  publlic static void main(String[] args ) 
+  public static void main(String[] args ) 
   {
     //Create Resources
     LibraryResource book = new Book("Dekada '70");
